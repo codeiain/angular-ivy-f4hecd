@@ -13,9 +13,9 @@ import { tap, auditTime, withLatestFrom } from 'rxjs/operators';
   selector: '[m22Resizable]',
   template: `
     <ng-content></ng-content>
-    <div class="m22-resizable-handle" cdkDrag 
-      (cdkDragStarted)="dragStarted()" 
-      (cdkDragEnded)="dragEnded($event)" 
+    <div class="m22-resizable-handle" cdkDrag
+      (cdkDragStarted)="dragStarted()"
+      (cdkDragEnded)="dragEnded($event)"
       (cdkDragMoved)="dragMoved($event)"></div>
     <div class="m22-resizable-triangle" *ngIf="sub$ | async"></div>
   `,
